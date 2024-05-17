@@ -14,6 +14,7 @@ import com.example.insighted.model.kampus
 import com.example.insighted.model.kampusManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class MainActivity : AppCompatActivity() {
     lateinit var fragmentManager: FragmentManager

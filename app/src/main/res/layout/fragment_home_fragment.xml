@@ -37,7 +37,7 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -50,6 +50,7 @@
                 tools:ignore="MissingConstraints" />
 
             <ImageView
+                android:id="@+id/account"
                 android:layout_width="63dp"
                 android:layout_height="63dp"
                 android:layout_marginTop="28dp"
@@ -57,7 +58,7 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/username"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/userprofile"
                 tools:ignore="MissingConstraints" />
@@ -137,12 +138,11 @@
                 android:id="@+id/viewAll_beasiswa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="128dp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="40dp"
                 android:text="View all"
                 android:textColor="#B3B3B3"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.764"
                 app:layout_constraintStart_toEndOf="@+id/textView5"
                 app:layout_constraintTop_toBottomOf="@+id/recycler_kampus" />
 
