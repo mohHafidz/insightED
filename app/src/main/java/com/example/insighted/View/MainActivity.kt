@@ -12,11 +12,16 @@ import com.example.insighted.model.beasiswa
 import com.example.insighted.model.beasiswaManager
 import com.example.insighted.model.kampus
 import com.example.insighted.model.kampusManager
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
     lateinit var fragmentManager: FragmentManager
     lateinit var binding: ActivityMainBinding
+
 
     private var currentFragmentTag: String? = null
 
@@ -41,9 +46,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-//        val intent = Intent(this, ListBeasiswa::class.java)
-//        startActivity(intent)
 
         val initialFragment = Home_fragment()
         goToFragment(initialFragment, "home")

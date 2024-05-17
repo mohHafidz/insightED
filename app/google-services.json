@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "477663344352",
+    "project_id": "insighted-8c274",
+    "storage_bucket": "insighted-8c274.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477663344352:android:6a2026ad08132c64314285",
+        "android_client_info": {
+          "package_name": "com.example.insighted"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477663344352-vjak6qcmfs2q1oflmsvmr27kp18mprgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.insighted",
+            "certificate_hash": "e251f711bd17db42757f4d71de92ed5ac3104ad3"
+          }
+        },
+        {
+          "client_id": "477663344352-9ndlpkd42d902qhg42qiidj8j4ss8uf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxXbrARv7IbvRPO34sd4eBbgsjLD7el_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477663344352-9ndlpkd42d902qhg42qiidj8j4ss8uf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
