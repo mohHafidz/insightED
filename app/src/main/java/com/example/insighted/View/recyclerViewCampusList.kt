@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.insighted.model.kampus
 
-class RecyclerViewCampusList(private val context: Context, private val dataList: List<kampus>) : RecyclerView.Adapter<RecyclerViewCampusList.ViewHolder>() {
+class RecyclerViewCampusList(private val dataList: List<kampus>) : RecyclerView.Adapter<RecyclerViewCampusList.ViewHolder>() {
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nama_kampus: TextView = itemView.findViewById(R.id.nama_kampus)
@@ -24,10 +25,15 @@ class RecyclerViewCampusList(private val context: Context, private val dataList:
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.nama_kampus.text = dataList[position].nama
-        holder.lokasi_kampus.text = dataList[position].lokasi
-        holder.grade_kampus.text = dataList[position].akreditasi
-        holder.logo_kampus.setImageResource(dataList[position].logo)
+        val currentItem = dataList[position]
+        holder.nama_kampus.text = currentItem.nama
+        holder.lokasi_kampus.text = currentItem.lokasi
+        holder.grade_kampus.text = currentItem.akreditasi
+//        holder.logo_kampus.setImageResource(dataList[position].logo)
+
+        Glide.with(holder.logo_kampus.context)
+            .load(currentItem.logo)
+            .into(holder.logo_kampus)
     }
 
     override fun getItemCount(): Int {

@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/campus_list"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4">
@@ -42,17 +42,14 @@
                 android:src="@drawable/baseline_search_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+                app:layout_constraintStart_toEndOf="@+id/search"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/search" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="261dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="30dp"
+                android:id="@+id/search"
+                android:layout_width="287dp"
+                android:layout_height="48dp"
                 android:background="#FFFFFF"
                 android:ems="0"
                 android:hint="Search"
@@ -79,9 +76,12 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_psikolog"
         android:layout_width="409dp"
         android:layout_height="498dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false"
+        android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />

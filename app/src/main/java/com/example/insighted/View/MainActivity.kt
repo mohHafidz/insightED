@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.insighted.*
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
-                    val fragment = Home_fragment()
+                    val fragment = HomeFragment()
                     goToFragment(fragment, "home")
                     return@OnNavigationItemSelectedListener true
                 }
@@ -46,6 +47,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
         auth = FirebaseAuth.getInstance()
 
         if (auth.currentUser == null) {
@@ -55,27 +58,27 @@ class MainActivity : AppCompatActivity() {
             finish() // Tutup MainActivity agar pengguna tidak bisa kembali ke sini
         }
 
-        val initialFragment = Home_fragment()
+        val initialFragment = HomeFragment()
         goToFragment(initialFragment, "home")
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
-        if (kampusManager.getKampusList().size == 0){
-            val kampus1 = kampus()
-            kampus1.addKampus("Bina Nusantara University", "Jakarta", "Unggulan", R.drawable.binus,R.drawable.logo_binus)
-            kampusManager.addKampus(kampus1)
-            val kampus2 = kampus()
-            kampus2.addKampus("Institut Teknlogi Bandung", "Bandung", "A", R.drawable.itb,R.drawable.logo_binus)
-            kampusManager.addKampus(kampus2)
-        }
-        if (beasiswaManager.getBeasiswaList().size == 0){
-            val beasiswa1 = beasiswa()
-            beasiswa1.addBeasiswa("Beasiswa S1 BCA Finance", "Beasiswa BCA Finance salah satu program beasiswa S1 yang disediakan bagi  mahasiswa di Indonesia. Kelebihannya, beasiswa terbuka untuk seluruh  mahasiswa PTN/PTS di tanah air. Jika Anda sudah menginjak semester II ke  atas, beasiswa ini bisa dicoba.", R.drawable.bca)
-            beasiswaManager.addBeasiswa(beasiswa1)
-            val beasiswa2 = beasiswa()
-            beasiswa2.addBeasiswa("Beasiswa S1 BCA Finance", "Beasiswa BCA Finance salah satu program beasiswa S1 yang disediakan bagi  mahasiswa di Indonesia. Kelebihannya, beasiswa terbuka untuk seluruh  mahasiswa PTN/PTS di tanah air. Jika Anda sudah menginjak semester II ke  atas, beasiswa ini bisa dicoba.", R.drawable.bca)
-            beasiswaManager.addBeasiswa(beasiswa2)
-        }
+//        if (kampusManager.getKampusList().size == 0){
+//            val kampus1 = kampus()
+//            kampus1.addKampus("Bina Nusantara University", "Jakarta", "Unggulan", R.drawable.binus,R.drawable.logo_binus)
+//            kampusManager.addKampus(kampus1)
+//            val kampus2 = kampus()
+//            kampus2.addKampus("Institut Teknlogi Bandung", "Bandung", "A", R.drawable.itb,R.drawable.logo_binus)
+//            kampusManager.addKampus(kampus2)
+//        }
+//        if (beasiswaManager.getBeasiswaList().size == 0){
+//            val beasiswa1 = beasiswa()
+//            beasiswa1.addBeasiswa("Beasiswa S1 BCA Finance", "Beasiswa BCA Finance salah satu program beasiswa S1 yang disediakan bagi  mahasiswa di Indonesia. Kelebihannya, beasiswa terbuka untuk seluruh  mahasiswa PTN/PTS di tanah air. Jika Anda sudah menginjak semester II ke  atas, beasiswa ini bisa dicoba.", R.drawable.bca)
+//            beasiswaManager.addBeasiswa(beasiswa1)
+//            val beasiswa2 = beasiswa()
+//            beasiswa2.addBeasiswa("Beasiswa S1 BCA Finance", "Beasiswa BCA Finance salah satu program beasiswa S1 yang disediakan bagi  mahasiswa di Indonesia. Kelebihannya, beasiswa terbuka untuk seluruh  mahasiswa PTN/PTS di tanah air. Jika Anda sudah menginjak semester II ke  atas, beasiswa ini bisa dicoba.", R.drawable.bca)
+//            beasiswaManager.addBeasiswa(beasiswa2)
+//        }
 
 
     }

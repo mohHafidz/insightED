@@ -19,4 +19,11 @@
         <item name="android:activityOpenExitAnimation">@anim/slide_in_right</item>
     </style>
 
+    <!-- res/values/styles.xml -->
+    <style name="CustomShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+
 </resources>

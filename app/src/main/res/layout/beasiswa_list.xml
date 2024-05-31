@@ -15,19 +15,20 @@
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="20dp"
             android:paddingRight="20dp">
 
             <ImageView
                 android:id="@+id/gambar_beasiswa"
-                android:layout_width="171dp"
-                android:layout_height="194dp"
-                android:layout_marginStart="16dp"
+                android:layout_width="152dp"
+                android:layout_height="181dp"
+                android:layout_marginStart="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.66999996"
                 app:srcCompat="@drawable/bca" />
 
             <TextView
@@ -46,9 +47,9 @@
 
             <TextView
                 android:id="@+id/deskripsi_beasiswa"
-                android:layout_width="179dp"
-                android:layout_height="215dp"
-                android:layout_marginStart="8dp"
+                android:layout_width="195dp"
+                android:layout_height="235dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="8dp"
                 android:autoSizeTextType="uniform"
                 android:fontFamily="@font/nunito_sans"
