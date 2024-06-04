@@ -1,41 +1,43 @@
-package com.example.insighted
+package com.example.insighted.View
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.insighted.View.recyclerViewKampus
-import com.example.insighted.model.kampus
-import com.example.insighted.model.kampusManager
+import com.example.insighted.R
+import com.example.insighted.model.beasiswa
 import com.google.firebase.firestore.*
 
-class ListCampusActivity : AppCompatActivity() {
-    lateinit var recyclerViewCampusList: RecyclerView
+class ListBeasiswa : AppCompatActivity() {
+    lateinit var recyclerViewBeasiswa: RecyclerView
     lateinit var back: ImageView
-    private lateinit var kampusAdapter: RecyclerViewCampusList
-    private val kampusList = ArrayList<kampus>()
     private lateinit var db: FirebaseFirestore
+    private lateinit var beasiswaAdapter: recyclerViewSholarship
+    private val beasiwaList = ArrayList<beasiswa>()
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list_campus)
+        setContentView(R.layout.activity_list_beasiswa)
         eventChangeListener()
 
-        recyclerViewCampusList =findViewById(R.id.campus_list)
-        recyclerViewCampusList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        recyclerViewCampusList.setHasFixedSize(true)
-        kampusAdapter = RecyclerViewCampusList(kampusList)
-        recyclerViewCampusList.adapter = kampusAdapter
+        recyclerViewBeasiswa = findViewById(R.id.sholarship_list)
+        recyclerViewBeasiswa.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerViewBeasiswa.setHasFixedSize(true)
+        beasiswaAdapter = recyclerViewSholarship(beasiwaList)
+        recyclerViewBeasiswa.adapter = beasiswaAdapter
 
-        back = findViewById(R.id.BackBTN)
+
+        back = findViewById(R.id.backBTN)
         back.setOnClickListener {
             onBackPressed()
         }
     }
     private fun eventChangeListener() {
         db = FirebaseFirestore.getInstance()
-        db.collection("campus")
+        db.collection("scholarship")
             .addSnapshotListener(object : EventListener<QuerySnapshot> {
                 override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
                     if (error != null) {
@@ -44,10 +46,10 @@ class ListCampusActivity : AppCompatActivity() {
                     }
                     for (dc in value?.documentChanges ?: emptyList()) {
                         if (dc.type == DocumentChange.Type.ADDED) {
-                            kampusList.add(dc.document.toObject(kampus::class.java))
+                            beasiwaList.add(dc.document.toObject(beasiswa::class.java))
                         }
                     }
-                    kampusAdapter.notifyDataSetChanged()
+                    beasiswaAdapter.notifyDataSetChanged()
                 }
             })
     }

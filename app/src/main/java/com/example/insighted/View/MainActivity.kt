@@ -4,23 +4,22 @@ import android.content.Intent
 import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.insighted.*
 import com.example.insighted.databinding.ActivityMainBinding
-import com.example.insighted.model.beasiswa
-import com.example.insighted.model.beasiswaManager
-import com.example.insighted.model.kampus
-import com.example.insighted.model.kampusManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
     lateinit var fragmentManager: FragmentManager
     lateinit var binding: ActivityMainBinding
     lateinit var auth: FirebaseAuth
+    lateinit var db: FirebaseFirestore
 
 
     private var currentFragmentTag: String? = null
@@ -50,35 +49,21 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         auth = FirebaseAuth.getInstance()
+        db = FirebaseFirestore.getInstance() // Inisialisasi FirebaseFirestore
 
         if (auth.currentUser == null) {
             // Pengguna belum login, arahkan ke LoginActivity
             val loginIntent = Intent(this, LoginActivity::class.java)
             startActivity(loginIntent)
-            finish() // Tutup MainActivity agar pengguna tidak bisa kembali ke sini
+            finish()
+        } else {
+            auth.currentUser?.let { checkFirstLogin(it) }
         }
-
         val initialFragment = HomeFragment()
         goToFragment(initialFragment, "home")
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
-//        if (kampusManager.getKampusList().size == 0){
-//            val kampus1 = kampus()
-//            kampus1.addKampus("Bina Nusantara University", "Jakarta", "Unggulan", R.drawable.binus,R.drawable.logo_binus)
-//            kampusManager.addKampus(kampus1)
-//            val kampus2 = kampus()
-//            kampus2.addKampus("Institut Teknlogi Bandung", "Bandung", "A", R.drawable.itb,R.drawable.logo_binus)
-//            kampusManager.addKampus(kampus2)
-//        }
-//        if (beasiswaManager.getBeasiswaList().size == 0){
-//            val beasiswa1 = beasiswa()
-//            beasiswa1.addBeasiswa("Beasiswa S1 BCA Finance", "Beasiswa BCA Finance salah satu program beasiswa S1 yang disediakan bagi  mahasiswa di Indonesia. Kelebihannya, beasiswa terbuka untuk seluruh  mahasiswa PTN/PTS di tanah air. Jika Anda sudah menginjak semester II ke  atas, beasiswa ini bisa dicoba.", R.drawable.bca)
-//            beasiswaManager.addBeasiswa(beasiswa1)
-//            val beasiswa2 = beasiswa()
-//            beasiswa2.addBeasiswa("Beasiswa S1 BCA Finance", "Beasiswa BCA Finance salah satu program beasiswa S1 yang disediakan bagi  mahasiswa di Indonesia. Kelebihannya, beasiswa terbuka untuk seluruh  mahasiswa PTN/PTS di tanah air. Jika Anda sudah menginjak semester II ke  atas, beasiswa ini bisa dicoba.", R.drawable.bca)
-//            beasiswaManager.addBeasiswa(beasiswa2)
-//        }
 
 
     }
@@ -99,5 +84,34 @@ class MainActivity : AppCompatActivity() {
 
         homeIcon.icon?.setColorFilter(if (currentFragmentTag == "home") activeColor else inactiveColor, PorterDuff.Mode.SRC_IN)
         chatIcon.icon?.setColorFilter(if (currentFragmentTag == "chat") activeColor else inactiveColor, PorterDuff.Mode.SRC_IN)
+    }
+
+    private fun checkFirstLogin(user: FirebaseUser) {
+        val email = user.email
+        if (email != null) {
+            val userRef = db.collection("users").whereEqualTo("email", email)
+            Log.d("LoginActivity", "Checking if email exists: $email")
+
+            userRef.get().addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val documents = task.result
+                    if (documents != null && !documents.isEmpty) {
+                        // Pengguna sudah pernah login sebelumnya
+                        Log.d("LoginActivity", "Email already exists, user has logged in before.")
+
+                    } else {
+                        // Pengguna belum pernah login sebelumnya, arahkan ke UserDetailsActivity
+                        Log.d("LoginActivity", "First time login, redirecting to UserDetailsActivity.")
+                        val intent = Intent(this, UserDetail::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
+                } else {
+                    Log.e("LoginActivity", "Failed to check user data.", task.exception)
+                }
+            }
+        } else {
+            Log.e("LoginActivity", "User email is null.")
+        }
     }
 }

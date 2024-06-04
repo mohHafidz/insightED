@@ -24,11 +24,11 @@
                 android:id="@+id/gambar_beasiswa"
                 android:layout_width="152dp"
                 android:layout_height="181dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.66999996"
+                app:layout_constraintVertical_bias="0.75"
                 app:srcCompat="@drawable/bca" />
 
             <TextView
@@ -57,6 +57,7 @@
                 android:text="TextView"
                 android:textColor="#000000"
                 android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/gambar_beasiswa"

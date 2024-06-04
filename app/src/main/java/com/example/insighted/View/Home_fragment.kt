@@ -1,4 +1,4 @@
-package com.example.insighted
+package com.example.insighted.View
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,15 +12,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.insighted.View.recyclerViewBeasiswa
-import com.example.insighted.View.recyclerViewKampus
+import com.example.insighted.R
 import com.example.insighted.model.beasiswa
-import com.example.insighted.model.beasiswaManager
 import com.example.insighted.model.kampus
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.firebase.firestore.DocumentChange
 import com.google.firebase.firestore.EventListener
 import com.google.firebase.firestore.FirebaseFirestore

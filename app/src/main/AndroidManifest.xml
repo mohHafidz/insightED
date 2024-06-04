@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,13 +16,16 @@
         android:theme="@style/Theme.InsightED"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".UserDetail"
             android:exported="false" />
         <activity
-            android:name=".ListBeasiswa"
+            android:name=".View.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ListCampusActivity"
+            android:name=".View.ListBeasiswa"
+            android:exported="false" />
+        <activity
+            android:name=".View.ListCampusActivity"
             android:exported="false" />
         <activity
             android:name=".View.MainActivity"
@@ -34,10 +38,9 @@
         </activity>
 
         <meta-data
-            android:resource="@array/preloaded_fonts"
             android:name="androidx.appcompat.app.AppCompatDelegate.DEFAULT_NIGHT_MODE"
-            android:value="MODE_NIGHT_NO"
-            />
+            android:resource="@array/preloaded_fonts"
+            android:value="MODE_NIGHT_NO" />
     </application>
 
 </manifest>

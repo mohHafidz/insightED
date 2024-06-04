@@ -1,4 +1,4 @@
-package com.example.insighted
+package com.example.insighted.View
 
 import android.os.Bundle
 import android.util.Log
@@ -8,10 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.insighted.View.recyclerViewBeasiswa
-import com.example.insighted.View.recyclerViewKampus
-import com.example.insighted.model.beasiswa
-import com.example.insighted.model.kampus
+import com.example.insighted.R
 import com.example.insighted.model.psikolog
 import com.example.insighted.model.recyclerViewPsikolog
 import com.google.firebase.firestore.*
