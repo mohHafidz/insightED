@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="25dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accounting and Finance"
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/question_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="1. (E) Apa yang dimaksud dengan aktiva lancar?"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/radio_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_group1_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Utang jangka panjang"
+            android:textSize="15dp"/>
+        <RadioButton
+            android:id="@+id/radio_group1_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Investasi jangka panjang"
+            android:textSize="15dp"/>
+        <RadioButton
+            android:id="@+id/radio_group1_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Kas dan setara kas"
+            android:textSize="15dp"/>
+        <RadioButton
+            android:id="@+id/radio_group1_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Aset tetap"
+            android:textSize="15dp"/>
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="2. (E) Manakah di antara berikut ini yang termasuk dalam laporan keuangan?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group2_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Laporan penjualan"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group2_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Laporan anggaran"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group2_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Laporan arus kas"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group2_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Laporan produksi"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="3. (E) Manakah di bawah ini yang bukan merupakan jenis laporan keuangan?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group3_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Laporan laba rugi"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group3_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Neraca"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group3_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Laporan arus kas"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group3_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Laporan anggaran"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="4. (E) Apa tujuan dari audit keuangan?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group4_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Meningkatkan penjualan"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group4_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Mengurangi pajak"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group4_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Memastikan akurasi laporan keuangan"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group4_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Mengurangi pengeluaran"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="5. (M) Manakah yang merupakan contoh biaya tetap?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group5_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Bahan baku"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group5_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Biaya tenaga kerja langsung"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group5_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Sewa gedung"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group5_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Biaya komisi penjualan"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="6. (M) Rasio apa yang mengukur likuiditas perusahaan?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group6_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Rasio utang terhadap ekuitas"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group6_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Rasio lancar"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group6_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Rasio laba kotor"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group6_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Rasio perputaran aktiva"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="7. (M) Apa yang dimaksud dengan 'hedging'?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group7_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Strategi untuk meningkatkan nilai portofolio"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group7_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Strategi untuk mengurangi risiko keuangan"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group7_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Metode menghitung pajak"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group7_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Teknik mengelola piutang"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="8. (H) Apa itu leverage keuangan?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group8_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Penggunaan ekuitas untuk mendanai operasi"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group8_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Penggunaan utang untuk meningkatkan potensi laba"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group8_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Penggunaan aktiva tetap"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group8_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Pengurangan biaya produksi"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="9. (H) Manakah di antara berikut ini yang merupakan investasi jangka panjang?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group9_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Kas"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group9_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Persediaan"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group9_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Saham perusahaan lain"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group9_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Piutang"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question_text10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="10. (H) Apa tujuan utama dari manajemen keuangan?"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:id="@+id/radio_group10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_group10_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Meningkatkan jumlah karyawan"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group10_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Mengurangi biaya produksi"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group10_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Memaksimalkan nilai perusahaan"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/radio_group10_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. Meminimalkan utang"
+                android:textSize="15dp"/>
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="end"
+            android:text="Next"/>
+
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
