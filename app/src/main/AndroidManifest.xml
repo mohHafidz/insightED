@@ -16,6 +16,9 @@
         android:theme="@style/Theme.InsightED"
         tools:targetApi="31">
         <activity
+            android:name=".bottomSheetResult"
+            android:exported="false" />
+        <activity
             android:name=".ResultActivity"
             android:exported="false" />
         <activity

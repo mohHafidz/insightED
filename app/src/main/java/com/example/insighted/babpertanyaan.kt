@@ -6,6 +6,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 
@@ -20,6 +21,7 @@ class babpertanyaan : AppCompatActivity() {
     lateinit var hospitality: ConstraintLayout
     lateinit var humanities: ConstraintLayout
     lateinit var submit: Button
+    lateinit var back_fragment: ImageView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,10 +37,15 @@ class babpertanyaan : AppCompatActivity() {
         hospitality = findViewById(R.id.hospitality)
         humanities = findViewById(R.id.humanities)
         submit = findViewById(R.id.resultButton)
+        back_fragment = findViewById(R.id.back_quiz)
 
         submit.setOnClickListener {
-            val intent = Intent(this, ResultActivity::class.java)
-            startActivity(intent)
+            val bottomSheetFragment = bottomSheetResult()
+            bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
+        }
+
+        back_fragment.setOnClickListener {
+            onBackPressed()
         }
 
         // Check and disable buttons if score exists
