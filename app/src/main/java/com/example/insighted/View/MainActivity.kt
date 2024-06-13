@@ -37,6 +37,12 @@ class MainActivity : AppCompatActivity() {
                     goToFragment(fragment, "chat")
                     return@OnNavigationItemSelectedListener true
                 }
+                R.id.major -> {
+                    val fragment = quizFragment()
+                    goToFragment(fragment, "Quiz")
+                    return@OnNavigationItemSelectedListener true
+                }
+
             }
             false
         }
@@ -72,19 +78,19 @@ class MainActivity : AppCompatActivity() {
         fragmentManager = supportFragmentManager
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
         currentFragmentTag = tag
-        updateBottomNavigationIconColor()
+//        updateBottomNavigationIconColor()
     }
 
-    private fun updateBottomNavigationIconColor() {
-        val homeIcon = binding.bottomNavigationView.menu.findItem(R.id.home)
-        val chatIcon = binding.bottomNavigationView.menu.findItem(R.id.chat)
-
-        val activeColor = resources.getColor(R.color.blue_card) // Ganti dengan warna aktif yang diinginkan
-        val inactiveColor = resources.getColor(R.color.unselect) // Ganti dengan warna tidak aktif yang diinginkan
-
-        homeIcon.icon?.setColorFilter(if (currentFragmentTag == "home") activeColor else inactiveColor, PorterDuff.Mode.SRC_IN)
-        chatIcon.icon?.setColorFilter(if (currentFragmentTag == "chat") activeColor else inactiveColor, PorterDuff.Mode.SRC_IN)
-    }
+//    private fun updateBottomNavigationIconColor() {
+//        val homeIcon = binding.bottomNavigationView.menu.findItem(R.id.home)
+//        val chatIcon = binding.bottomNavigationView.menu.findItem(R.id.chat)
+//
+//        val activeColor = resources.getColor(R.color.blue_card) // Ganti dengan warna aktif yang diinginkan
+//        val inactiveColor = resources.getColor(R.color.unselect) // Ganti dengan warna tidak aktif yang diinginkan
+//
+//        homeIcon.icon?.setColorFilter(if (currentFragmentTag == "home") activeColor else inactiveColor, PorterDuff.Mode.SRC_IN)
+//        chatIcon.icon?.setColorFilter(if (currentFragmentTag == "chat") activeColor else inactiveColor, PorterDuff.Mode.SRC_IN)
+//    }
 
     private fun checkFirstLogin(user: FirebaseUser) {
         val email = user.email

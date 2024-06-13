@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/campus_list"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_judul_kuisioner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Questionnaire For Major"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text_jumlah_pertanyaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Total Question: 13"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_time_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Time Limit: No time limit"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_deskripsi_kuisioner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Kuisioner ini akan memberikan beberapa pertanyaan mengenai kehidupan sehari-hari dan juga mengenai hal apa yang Anda suka lakukan. Dengan tujuan agar dapat memberikan hasil rekomendasi yang sesuai dengan apa yang Anda minati. Dalam kuisioner ini tidak akan mempertanyakan pertanyaan yang sangat personal."
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Start" />
+
+</LinearLayout>

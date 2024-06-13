@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radio_group5_button4" type="id" />
+    <item name="radio_group5_button3" type="id" />
+    <item name="question_text" type="id" />
+    <item name="radio_group5" type="id" />
+    <item name="radio_group5_button1" type="id" />
+    <item name="radio_group5_button2" type="id" />
+</resources>
