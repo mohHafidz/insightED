@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_gravity="center"
+    android:background="@drawable/campus_list"
     android:padding="16dp">
 
     <TextView
@@ -36,13 +37,13 @@
         android:id="@+id/text_deskripsi_kuisioner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="60dp"
         android:text="Kuisioner ini akan memberikan beberapa pertanyaan mengenai kehidupan sehari-hari dan juga mengenai hal apa yang Anda suka lakukan. Dengan tujuan agar dapat memberikan hasil rekomendasi yang sesuai dengan apa yang Anda minati. Dalam kuisioner ini tidak akan mempertanyakan pertanyaan yang sangat personal."
         android:textSize="15dp" />
 
     <Button
         android:id="@+id/button_start"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Start" />
