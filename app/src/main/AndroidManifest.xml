@@ -16,6 +16,9 @@
         android:theme="@style/Theme.InsightED"
         tools:targetApi="31">
         <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserDetail"
             android:exported="false" />
         <activity
