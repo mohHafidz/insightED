@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background_color">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -28,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:text="Accounting and Finance"
+            android:text="Engineering"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -53,388 +52,428 @@
             android:padding="16dp">
 
             <TextView
-                android:id="@+id/question_text1"
+                android:id="@+id/question_text1_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="1. (E) Apa yang dimaksud dengan aktiva lancar?"
+                android:text="1.	(E) Apa itu prinsip dasar dalam teknik mekanik?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group1"
+                android:id="@+id/radio_group1_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button1"
+                    android:id="@+id/radio_group1_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Utang jangka panjang"
-                    android:textSize="15dp"/>
+                    android:text="A. Teori warna"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button2"
+                    android:id="@+id/radio_group1_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Investasi jangka panjang"
-                    android:textSize="15dp"/>
+                    android:text="B. Hukum Newton tentang gerak"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button3"
+                    android:id="@+id/radio_group1_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Kas dan setara kas"
-                    android:textSize="15dp"/>
+                    android:text="C. Teori musik"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button4"
+                    android:id="@+id/radio_group1_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Aset tetap"
-                    android:textSize="15dp"/>
+                    android:text="D. Metode komunikasi massa"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text2"
+                android:id="@+id/question_text2_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="2. (E) Manakah di antara berikut ini yang termasuk dalam laporan keuangan?"
+                android:text="2.	(E) Manakah di antara berikut ini yang termasuk bahan komposit?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group2"
+                android:id="@+id/radio_group2_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button1"
+                    android:id="@+id/radio_group2_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Laporan penjualan"
-                    android:textSize="15dp"/>
+                    android:text="A. Besi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button2"
+                    android:id="@+id/radio_group2_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Laporan anggaran"
-                    android:textSize="15dp"/>
+                    android:text="B. Beton bertulang"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button3"
+                    android:id="@+id/radio_group2_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Laporan arus kas"
-                    android:textSize="15dp"/>
+                    android:text="C. Aluminium"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button4"
+                    android:id="@+id/radio_group2_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Laporan produksi"
-                    android:textSize="15dp"/>
+                    android:text="D. Tembaga"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text3"
+                android:id="@+id/question_text3_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="3. (E) Manakah di bawah ini yang bukan merupakan jenis laporan keuangan?"
+                android:text="3.	(E) Apa fungsi utama dari mesin turbin?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group3"
+                android:id="@+id/radio_group3_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button1"
+                    android:id="@+id/radio_group3_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Laporan laba rugi"
-                    android:textSize="15dp"/>
+                    android:text="A. Meningkatkan tekanan fluida"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button2"
+                    android:id="@+id/radio_group3_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Neraca"
-                    android:textSize="15dp"/>
+                    android:text="B. Menghasilkan energi mekanik dari fluida yang bergerak"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button3"
+                    android:id="@+id/radio_group3_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Laporan arus kas"
-                    android:textSize="15dp"/>
+                    android:text="C. Mengurangi kecepatan aliran fluida"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button4"
+                    android:id="@+id/radio_group3_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Laporan anggaran"
-                    android:textSize="15dp"/>
+                    android:text="D. Menyimpan energi"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text4"
+                android:id="@+id/question_text4_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="4. (E) Apa tujuan dari audit keuangan?"
+                android:text="4.	(M) Apa yang dimaksud dengan 'stress' dalam konteks material teknik?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group4"
+                android:id="@+id/radio_group4_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button1"
+                    android:id="@+id/radio_group4_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Meningkatkan penjualan"
-                    android:textSize="15dp"/>
+                    android:text="A. Tekanan emosional"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button2"
+                    android:id="@+id/radio_group4_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Mengurangi pajak"
-                    android:textSize="15dp"/>
+                    android:text="B. Gaya per satuan luas pada material"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button3"
+                    android:id="@+id/radio_group4_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Memastikan akurasi laporan keuangan"
-                    android:textSize="15dp"/>
+                    android:text="C. Kelembutan material"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button4"
+                    android:id="@+id/radio_group4_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Mengurangi pengeluaran"
-                    android:textSize="15dp"/>
+                    android:text="D. Sifat termal material"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text5"
+                android:id="@+id/question_text5_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="5. (M) Manakah yang merupakan contoh biaya tetap?"
+                android:text="5.	(M) Apa tujuan dari uji kekuatan material?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group5"
+                android:id="@+id/radio_group5_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button1"
+                    android:id="@+id/radio_group5_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Bahan baku"
-                    android:textSize="15dp"/>
+                    android:text="A. Mengukur efisiensi desain"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button2"
+                    android:id="@+id/radio_group5_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Biaya tenaga kerja langsung"
-                    android:textSize="15dp"/>
+                    android:text="B. Mengukur kemampuan material menahan gaya"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button3"
+                    android:id="@+id/radio_group5_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Sewa gedung"
-                    android:textSize="15dp"/>
+                    android:text="C. Mengukur kecepatan operasi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button4"
+                    android:id="@+id/radio_group5_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Biaya komisi penjualan"
-                    android:textSize="15dp"/>
+                    android:text="D. Mengukur estetika material"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text6"
+                android:id="@+id/question_text6_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="6. (M) Rasio apa yang mengukur likuiditas perusahaan?"
+                android:text="6.	(M) Apa yang dimaksud dengan 'thermodynamics'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group6"
+                android:id="@+id/radio_group6_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button1"
+                    android:id="@+id/radio_group6_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Rasio utang terhadap ekuitas"
-                    android:textSize="15dp"/>
+                    android:text="A. Studi tentang gerak fluida"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button2"
+                    android:id="@+id/radio_group6_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Rasio lancar"
-                    android:textSize="15dp"/>
+                    android:text="B. Studi tentang energi dan perubahan panas"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button3"
+                    android:id="@+id/radio_group6_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Rasio laba kotor"
-                    android:textSize="15dp"/>
+                    android:text="C. Studi tentang getaran"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button4"
+                    android:id="@+id/radio_group6_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Rasio perputaran aktiva"
-                    android:textSize="15dp"/>
+                    android:text="D. Studi tentang material komposit"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text7"
+                android:id="@+id/question_text7_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="7. (M) Apa yang dimaksud dengan 'hedging'?"
+                android:text="7.	(M) Manakah di antara berikut ini yang merupakan jenis sambungan dalam teknik?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group7"
+                android:id="@+id/radio_group7_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button1"
+                    android:id="@+id/radio_group7_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Strategi untuk meningkatkan nilai portofolio"
-                    android:textSize="15dp"/>
+                    android:text="A. Sambungan mekanik"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button2"
+                    android:id="@+id/radio_group7_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Strategi untuk mengurangi risiko keuangan"
-                    android:textSize="15dp"/>
+                    android:text="B. Sambungan virtual"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button3"
+                    android:id="@+id/radio_group7_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Metode menghitung pajak"
-                    android:textSize="15dp"/>
+                    android:text="C. Sambungan teoritis"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button4"
+                    android:id="@+id/radio_group7_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Teknik mengelola piutang"
-                    android:textSize="15dp"/>
+                    android:text="D. Sambungan estetika"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text8"
+                android:id="@+id/question_text8_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="8. (H) Apa itu leverage keuangan?"
+                android:text="8.	(H) Apa itu 'CAD' dalam teknik?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group8"
+                android:id="@+id/radio_group8_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button1"
+                    android:id="@+id/radio_group8_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Penggunaan ekuitas untuk mendanai operasi"
-                    android:textSize="15dp"/>
+                    android:text="A. Computer-Aided Design"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button2"
+                    android:id="@+id/radio_group8_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Penggunaan utang untuk meningkatkan potensi laba"
-                    android:textSize="15dp"/>
+                    android:text="B. Component Analysis Device"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button3"
+                    android:id="@+id/radio_group8_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Penggunaan aktiva tetap"
-                    android:textSize="15dp"/>
+                    android:text="C. Circuit Assembly Diagram"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button4"
+                    android:id="@+id/radio_group8_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Pengurangan biaya produksi"
-                    android:textSize="15dp"/>
+                    android:text="D. Chemical Assessment Data"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text9"
+                android:id="@+id/question_text9_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="9. (H) Manakah di antara berikut ini yang merupakan investasi jangka panjang?"
+                android:text="9.	(H) Apa yang dimaksud dengan analisis elemen hingga (Finite Element Analysis)?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group9"
+                android:id="@+id/radio_group9_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button1"
+                    android:id="@+id/radio_group9_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Kas"
-                    android:textSize="15dp"/>
+                    android:text="A. Metode untuk memprediksi perilaku produk"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button2"
+                    android:id="@+id/radio_group9_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Persediaan"
-                    android:textSize="15dp"/>
+                    android:text="B. Teknik untuk mendesain sistem elektrik"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button3"
+                    android:id="@+id/radio_group9_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Saham perusahaan lain"
-                    android:textSize="15dp"/>
+                    android:text="C. Proses perakitan komponen"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button4"
+                    android:id="@+id/radio_group9_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Piutang"
-                    android:textSize="15dp"/>
+                    android:text="D. Metode untuk meningkatkan estetika produk"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text10"
+                android:id="@+id/question_text10_engineering"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="10. (H) Apa tujuan utama dari manajemen keuangan?"
+                android:text="10.	(H) Apa yang dimaksud dengan 'resistor' dalam elektronik?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group10"
+                android:id="@+id/radio_group10_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button1"
+                    android:id="@+id/radio_group10_button1_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Meningkatkan jumlah karyawan"
-                    android:textSize="15dp"/>
+                    android:text="A. Komponen yang mempercepat aliran listrik"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button2"
+                    android:id="@+id/radio_group10_button2_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Mengurangi biaya produksi"
-                    android:textSize="15dp"/>
+                    android:text="B. Komponen yang memperlambat aliran listrik"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button3"
+                    android:id="@+id/radio_group10_button3_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Memaksimalkan nilai perusahaan"
-                    android:textSize="15dp"/>
+                    android:text="C. Komponen yang mengubah aliran listrik menjadi cahaya"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button4"
+                    android:id="@+id/radio_group10_button4_engineering"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Meminimalkan utang"
-                    android:textSize="15dp"/>
+                    android:text="D. Komponen yang menyimpan energi listrik"
+                    android:textSize="15dp" />
             </RadioGroup>
 
 
             <Button
-                android:id="@+id/button_next"
+                android:id="@+id/button_next_engineering"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -447,7 +486,9 @@
 
 
         </LinearLayout>
+
     </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

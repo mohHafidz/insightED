@@ -15,14 +15,15 @@
         android:text="Questionnaire For Major"
         android:textSize="24dp"
         android:textStyle="bold" />
+
     <TextView
         android:id="@+id/text_jumlah_pertanyaan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Total Question: 13"
+        android:text="Total Bab: 80"
         android:textSize="15dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_time_limit"

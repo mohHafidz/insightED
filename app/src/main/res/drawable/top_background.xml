@@ -3,19 +3,19 @@
     <!-- Shape Background -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@android:color/darker_gray" />
+            <solid android:color="@android:color/white" />
             <corners
                 android:bottomLeftRadius="17dp"
                 android:bottomRightRadius="17dp" />
         </shape>
     </item>
     <!-- Shadow -->
-    <item  android:bottom="30dp">
-        <shape android:shape="rectangle">
-            <solid android:color="@color/white" />
-            <corners
-                android:bottomLeftRadius="17dp"
-                android:bottomRightRadius="17dp" />
-        </shape>
-    </item>
+<!--    <item  android:bottom="30dp">-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <solid android:color="@color/white" />-->
+<!--            <corners-->
+<!--                android:bottomLeftRadius="17dp"-->
+<!--                android:bottomRightRadius="17dp" />-->
+<!--        </shape>-->
+<!--    </item>-->
 </layer-list>

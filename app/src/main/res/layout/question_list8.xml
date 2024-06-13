@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/background_color">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -28,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:text="Accounting and Finance"
+            android:text="Humanities"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -53,388 +52,428 @@
             android:padding="16dp">
 
             <TextView
-                android:id="@+id/question_text1"
+                android:id="@+id/question_text1_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="1. (E) Apa yang dimaksud dengan aktiva lancar?"
+                android:text="1.	(E) Apa yang dimaksud dengan 'antropologi'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group1"
+                android:id="@+id/radio_group1_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button1"
+                    android:id="@+id/radio_group1_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Utang jangka panjang"
-                    android:textSize="15dp"/>
+                    android:text="A. Studi tentang teknologi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button2"
+                    android:id="@+id/radio_group1_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Investasi jangka panjang"
-                    android:textSize="15dp"/>
+                    android:text="B. Studi tentang masyarakat dan budaya manusia"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button3"
+                    android:id="@+id/radio_group1_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Kas dan setara kas"
-                    android:textSize="15dp"/>
+                    android:text="C. Studi tentang astronomi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group1_button4"
+                    android:id="@+id/radio_group1_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Aset tetap"
-                    android:textSize="15dp"/>
+                    android:text="D. Studi tentang kimia"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text2"
+                android:id="@+id/question_text2_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="2. (E) Manakah di antara berikut ini yang termasuk dalam laporan keuangan?"
+                android:text="2.	(E) Apa yang dimaksud dengan 'sosiologi'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group2"
+                android:id="@+id/radio_group2_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button1"
+                    android:id="@+id/radio_group2_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Laporan penjualan"
-                    android:textSize="15dp"/>
+                    android:text="A. Studi tentang masyarakat dan interaksi sosial"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button2"
+                    android:id="@+id/radio_group2_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Laporan anggaran"
-                    android:textSize="15dp"/>
+                    android:text="B. Studi tentang fisika"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button3"
+                    android:id="@+id/radio_group2_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Laporan arus kas"
-                    android:textSize="15dp"/>
+                    android:text="C. Studi tentang pengolahan data"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group2_button4"
+                    android:id="@+id/radio_group2_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Laporan produksi"
-                    android:textSize="15dp"/>
+                    android:text="D. Studi tentang sistem komputer"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text3"
+                android:id="@+id/question_text3_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="3. (E) Manakah di bawah ini yang bukan merupakan jenis laporan keuangan?"
+                android:text="3.	(E) Apa yang dimaksud dengan 'historiografi'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group3"
+                android:id="@+id/radio_group3_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button1"
+                    android:id="@+id/radio_group3_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Laporan laba rugi"
-                    android:textSize="15dp"/>
+                    android:text="A. Penulisan tentang flora dan fauna"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button2"
+                    android:id="@+id/radio_group3_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Neraca"
-                    android:textSize="15dp"/>
+                    android:text="B. Studi tentang teknik mesin"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button3"
+                    android:id="@+id/radio_group3_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Laporan arus kas"
-                    android:textSize="15dp"/>
+                    android:text="C. Studi tentang penulisan dan penyajian sejarah"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group3_button4"
+                    android:id="@+id/radio_group3_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Laporan anggaran"
-                    android:textSize="15dp"/>
+                    android:text="D. Penulisan tentang ilmu fisika"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text4"
+                android:id="@+id/question_text4_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="4. (E) Apa tujuan dari audit keuangan?"
+                android:text="4.	(M) Apa tujuan utama dari studi sejarah?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group4"
+                android:id="@+id/radio_group4_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button1"
+                    android:id="@+id/radio_group4_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Meningkatkan penjualan"
-                    android:textSize="15dp"/>
+                    android:text="A. Memprediksi masa depan"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button2"
+                    android:id="@+id/radio_group4_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Mengurangi pajak"
-                    android:textSize="15dp"/>
+                    android:text="B. Mengembangkan teknologi baru"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button3"
+                    android:id="@+id/radio_group4_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Memastikan akurasi laporan keuangan"
-                    android:textSize="15dp"/>
+                    android:text="C. Mempelajari dan memahami peristiwa masa lalu"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group4_button4"
+                    android:id="@+id/radio_group4_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Mengurangi pengeluaran"
-                    android:textSize="15dp"/>
+                    android:text="D. Mengukur kondisi cuaca"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text5"
+                android:id="@+id/question_text5_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="5. (M) Manakah yang merupakan contoh biaya tetap?"
+                android:text="5.	(M) Apa yang dimaksud dengan 'filsafat'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group5"
+                android:id="@+id/radio_group5_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button1"
+                    android:id="@+id/radio_group5_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Bahan baku"
-                    android:textSize="15dp"/>
+                    android:text="A. Studi tentang seni"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button2"
+                    android:id="@+id/radio_group5_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Biaya tenaga kerja langsung"
-                    android:textSize="15dp"/>
+                    android:text="B. Studi tentang ilmu alam"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button3"
+                    android:id="@+id/radio_group5_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Sewa gedung"
-                    android:textSize="15dp"/>
+                    android:text="C. Studi tentang prinsip-prinsip dan konsep dasar dari pengetahuan dan kehidupan"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group5_button4"
+                    android:id="@+id/radio_group5_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Biaya komisi penjualan"
-                    android:textSize="15dp"/>
+                    android:text="D. Studi tentang ekonomi"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text6"
+                android:id="@+id/question_text6_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="6. (M) Rasio apa yang mengukur likuiditas perusahaan?"
+                android:text="6.	(M) Manakah dari berikut ini yang termasuk cabang dari filsafat?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group6"
+                android:id="@+id/radio_group6_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button1"
+                    android:id="@+id/radio_group6_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Rasio utang terhadap ekuitas"
-                    android:textSize="15dp"/>
+                    android:text="A. Fisika"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button2"
+                    android:id="@+id/radio_group6_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Rasio lancar"
-                    android:textSize="15dp"/>
+                    android:text="B. Biologi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button3"
+                    android:id="@+id/radio_group6_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Rasio laba kotor"
-                    android:textSize="15dp"/>
+                    android:text="C. Metafisika"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group6_button4"
+                    android:id="@+id/radio_group6_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Rasio perputaran aktiva"
-                    android:textSize="15dp"/>
+                    android:text="D. Teknologi informasi"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text7"
+                android:id="@+id/question_text7_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="7. (M) Apa yang dimaksud dengan 'hedging'?"
+                android:text="7.	(M) Apa itu 'budaya populer'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group7"
+                android:id="@+id/radio_group7_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button1"
+                    android:id="@+id/radio_group7_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Strategi untuk meningkatkan nilai portofolio"
-                    android:textSize="15dp"/>
+                    android:text="A. Budaya yang berfokus pada akademik"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button2"
+                    android:id="@+id/radio_group7_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Strategi untuk mengurangi risiko keuangan"
-                    android:textSize="15dp"/>
+                    android:text="B. Budaya yang dikembangkan dan dinikmati oleh massa"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button3"
+                    android:id="@+id/radio_group7_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Metode menghitung pajak"
-                    android:textSize="15dp"/>
+                    android:text="C. Budaya yang berfokus pada elit"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group7_button4"
+                    android:id="@+id/radio_group7_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Teknik mengelola piutang"
-                    android:textSize="15dp"/>
+                    android:text="D. Budaya yang tidak berubah"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text8"
+                android:id="@+id/question_text8_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="8. (H) Apa itu leverage keuangan?"
+                android:text="8.	(H) Apa yang dimaksud dengan 'hermeneutika'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group8"
+                android:id="@+id/radio_group8_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button1"
+                    android:id="@+id/radio_group8_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Penggunaan ekuitas untuk mendanai operasi"
-                    android:textSize="15dp"/>
+                    android:text="A. Studi tentang geologi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button2"
+                    android:id="@+id/radio_group8_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Penggunaan utang untuk meningkatkan potensi laba"
-                    android:textSize="15dp"/>
+                    android:text="B. Teori dan metodologi interpretasi, terutama teks agama"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button3"
+                    android:id="@+id/radio_group8_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Penggunaan aktiva tetap"
-                    android:textSize="15dp"/>
+                    android:text="C. Teori tentang sistem komunikasi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group8_button4"
+                    android:id="@+id/radio_group8_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Pengurangan biaya produksi"
-                    android:textSize="15dp"/>
+                    android:text="D. Studi tentang kimia organik"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text9"
+                android:id="@+id/question_text9_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="9. (H) Manakah di antara berikut ini yang merupakan investasi jangka panjang?"
+                android:text="9.	(H) Apa yang dimaksud dengan analisis struktural dalam studi literatur?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group9"
+                android:id="@+id/radio_group9_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button1"
+                    android:id="@+id/radio_group9_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Kas"
-                    android:textSize="15dp"/>
+                    android:text="A. Teknik untuk mengembangkan karakter"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button2"
+                    android:id="@+id/radio_group9_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Persediaan"
-                    android:textSize="15dp"/>
+                    android:text="B. Pendekatan untuk memahami elemen struktur teks"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button3"
+                    android:id="@+id/radio_group9_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Saham perusahaan lain"
-                    android:textSize="15dp"/>
+                    android:text="C. Metode untuk menulis cerita pendek"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group9_button4"
+                    android:id="@+id/radio_group9_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Piutang"
-                    android:textSize="15dp"/>
+                    android:text="D. Teknik untuk menciptakan dialog"
+                    android:textSize="15dp" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/question_text10"
+                android:id="@+id/question_text10_humanities"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="10. (H) Apa tujuan utama dari manajemen keuangan?"
+                android:text="10.	(H) Apa itu 'eksistensialisme'?"
                 android:textSize="15dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioGroup
-                android:id="@+id/radio_group10"
+                android:id="@+id/radio_group10_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button1"
+                    android:id="@+id/radio_group10_button1_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A. Meningkatkan jumlah karyawan"
-                    android:textSize="15dp"/>
+                    android:text="A. Filsafat yang berfokus pada hakikat ilmu pengetahuan"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button2"
+                    android:id="@+id/radio_group10_button2_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B. Mengurangi biaya produksi"
-                    android:textSize="15dp"/>
+                    android:text="B. Filsafat yang menekankan kebebasan individu dan tanggung jawab pribadi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button3"
+                    android:id="@+id/radio_group10_button3_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C. Memaksimalkan nilai perusahaan"
-                    android:textSize="15dp"/>
+                    android:text="C. Filsafat yang berfokus pada teknologi"
+                    android:textSize="15dp" />
+
                 <RadioButton
-                    android:id="@+id/radio_group10_button4"
+                    android:id="@+id/radio_group10_button4_humanities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D. Meminimalkan utang"
-                    android:textSize="15dp"/>
+                    android:text="D. Filsafat tentang perkembangan ekonomi"
+                    android:textSize="15dp" />
             </RadioGroup>
 
 
             <Button
-                android:id="@+id/button_next"
+                android:id="@+id/button_next_humanities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -447,7 +486,9 @@
 
 
         </LinearLayout>
+
     </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

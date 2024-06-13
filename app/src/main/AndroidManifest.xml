@@ -16,7 +16,37 @@
         android:theme="@style/Theme.InsightED"
         tools:targetApi="31">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".questionActivity_art"
+            android:exported="false" />
+        <activity
+            android:name=".questionActivity_business"
+            android:exported="false" />
+        <activity
+            android:name=".questionActivity_Communication"
+            android:exported="false" />
+        <activity
+            android:name=".questionActivity_Computing"
+            android:exported="false" />
+        <activity
+            android:name=".questionActivity_Engineering"
+            android:exported="false" />
+        <activity
+            android:name=".questionActivity_Hospitality"
+            android:exported="false" />
+        <activity
+            android:name=".questionActivity_Humanities"
+            android:exported="false" />
+        <activity
+            android:name=".babpertanyaan"
             android:exported="false" />
         <activity
             android:name=".UserDetail"
