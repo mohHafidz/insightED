@@ -1,7 +1,6 @@
 package com.example.insighted.View
 
 import android.content.Intent
-import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -40,6 +39,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.major -> {
                     val fragment = quizFragment()
                     goToFragment(fragment, "Quiz")
+                    return@OnNavigationItemSelectedListener true
+                }
+
+                R.id.member -> {
+                    val fragment = member()
+                    goToFragment(fragment, "member")
                     return@OnNavigationItemSelectedListener true
                 }
 

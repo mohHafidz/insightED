@@ -16,7 +16,7 @@
         android:theme="@style/Theme.InsightED"
         tools:targetApi="31">
         <activity
-            android:name=".bottomSheetResult"
+            android:name=".View.bottomSheetResult"
             android:exported="false" />
         <activity
             android:name=".ResultActivity"
@@ -25,34 +25,34 @@
             android:name=".ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".QuestionActivity"
+            android:name=".View.QuestionActivity"
             android:exported="false" />
         <activity
-            android:name=".questionActivity_art"
+            android:name=".View.questionActivity_art"
             android:exported="false" />
         <activity
-            android:name=".questionActivity_business"
+            android:name=".View.questionActivity_business"
             android:exported="false" />
         <activity
-            android:name=".questionActivity_Communication"
+            android:name=".View.questionActivity_Communication"
             android:exported="false" />
         <activity
-            android:name=".questionActivity_Computing"
+            android:name=".View.questionActivity_Computing"
             android:exported="false" />
         <activity
-            android:name=".questionActivity_Engineering"
+            android:name=".View.questionActivity_Engineering"
             android:exported="false" />
         <activity
-            android:name=".questionActivity_Hospitality"
+            android:name=".View.questionActivity_Hospitality"
             android:exported="false" />
         <activity
-            android:name=".questionActivity_Humanities"
+            android:name=".View.questionActivity_Humanities"
             android:exported="false" />
         <activity
-            android:name=".babpertanyaan"
+            android:name=".View.babpertanyaan"
             android:exported="false" />
         <activity
-            android:name=".UserDetail"
+            android:name=".View.UserDetail"
             android:exported="false" />
         <activity
             android:name=".View.LoginActivity"

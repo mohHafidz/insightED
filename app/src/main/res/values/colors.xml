@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_card">#1D5D9B</color>
     <color name="blue">#50c4ff</color>
+    <color name="blue_disable">#225671</color>
     <color name="unselect">#a4e9ff</color>
     <color name="background_color">#f0f8fe</color>
     <color name="grade">#d9d9d9</color>

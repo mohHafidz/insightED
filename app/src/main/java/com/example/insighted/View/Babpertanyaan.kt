@@ -1,14 +1,15 @@
-package com.example.insighted
+package com.example.insighted.View
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.example.insighted.R
 
 class babpertanyaan : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class babpertanyaan : AppCompatActivity() {
     lateinit var hospitality: ConstraintLayout
     lateinit var humanities: ConstraintLayout
     lateinit var submit: Button
-    lateinit var back_fragment: ImageView
+    lateinit var goBack : ImageView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,15 +38,16 @@ class babpertanyaan : AppCompatActivity() {
         hospitality = findViewById(R.id.hospitality)
         humanities = findViewById(R.id.humanities)
         submit = findViewById(R.id.resultButton)
-        back_fragment = findViewById(R.id.back_quiz)
+        goBack = findViewById(R.id.back_quiz)
+
+        goBack.setOnClickListener {
+            onBackPressed()
+        }
+
 
         submit.setOnClickListener {
             val bottomSheetFragment = bottomSheetResult()
             bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
-        }
-
-        back_fragment.setOnClickListener {
-            onBackPressed()
         }
 
         // Check and disable buttons if score exists
@@ -100,7 +102,8 @@ class babpertanyaan : AppCompatActivity() {
         val score = sharedPreferences.getInt(scoreKey, 0)
         if (score != 0) {
             button.isEnabled = false
-            button.setBackgroundColor(Color.GRAY)
+//            button.setBackgroundColor(Color.GRAY)
+            button.setBackgroundResource(R.drawable.button_disable)
         }
     }
 
@@ -119,10 +122,10 @@ class babpertanyaan : AppCompatActivity() {
         if (accountingScore != 0 && artScore != 0 && businessScore != 0 && communicationScore != 0 &&
             computingScore != 0 && engineeringScore != 0 && hospitalityScore != 0 && humanitiesScore != 0) {
             submit.isEnabled = true
-            submit.setBackgroundColor(Color.GREEN) // Optional: Change color to indicate it's enabled
+            submit.visibility = View.VISIBLE
         } else {
             submit.isEnabled = false
-            submit.setBackgroundColor(Color.GRAY) // Optional: Change color to indicate it's disabled
+            submit.visibility = View.INVISIBLE
         }
     }
 }

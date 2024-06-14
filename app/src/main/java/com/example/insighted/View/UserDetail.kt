@@ -1,4 +1,4 @@
-package com.example.insighted
+package com.example.insighted.View
 
 
 import android.content.Intent
@@ -16,11 +16,17 @@ import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.insighted.View.HomeFragment
-import com.example.insighted.View.MainActivity
+import com.example.insighted.ApiService
+import com.example.insighted.City
+import com.example.insighted.CityResponse
+import com.example.insighted.District
+import com.example.insighted.DistrictResponse
+import com.example.insighted.Province
+import com.example.insighted.ProvinceResponse
+import com.example.insighted.R
+import com.example.insighted.RetrofitClient
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.firestore.FirebaseFirestore
 import retrofit2.Call
 import retrofit2.Callback

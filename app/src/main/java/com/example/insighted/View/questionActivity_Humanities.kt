@@ -1,48 +1,48 @@
-package com.example.insighted
+package com.example.insighted.View
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.insighted.R
 
-class QuestionActivity : AppCompatActivity() {
+class questionActivity_Humanities : AppCompatActivity() {
 
     private lateinit var radioGroups: List<RadioGroup>
     lateinit var back: ImageView
-
     private val correctAnswers = listOf(
-        R.id.radio_group1_button3,
-        R.id.radio_group2_button3,
-        R.id.radio_group3_button4,
+        R.id.radio_group1_button1,
+        R.id.radio_group2_button2,
+        R.id.radio_group3_button3,
         R.id.radio_group4_button3,
-        R.id.radio_group5_button3,
+        R.id.radio_group5_button2,
         R.id.radio_group6_button2,
         R.id.radio_group7_button2,
         R.id.radio_group8_button2,
-        R.id.radio_group9_button3,
-        R.id.radio_group10_button3
+        R.id.radio_group9_button2,
+        R.id.radio_group10_button2
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.question_list)
+        setContentView(R.layout.question_list8)
 
         radioGroups = listOf(
-            findViewById(R.id.radio_group1),
-            findViewById(R.id.radio_group2),
-            findViewById(R.id.radio_group3),
-            findViewById(R.id.radio_group4),
-            findViewById(R.id.radio_group5),
-            findViewById(R.id.radio_group6),
-            findViewById(R.id.radio_group7),
-            findViewById(R.id.radio_group8),
-            findViewById(R.id.radio_group9),
-            findViewById(R.id.radio_group10)
+            findViewById(R.id.radio_group1_humanities),
+            findViewById(R.id.radio_group2_humanities),
+            findViewById(R.id.radio_group3_humanities),
+            findViewById(R.id.radio_group4_humanities),
+            findViewById(R.id.radio_group5_humanities),
+            findViewById(R.id.radio_group6_humanities),
+            findViewById(R.id.radio_group7_humanities),
+            findViewById(R.id.radio_group8_humanities),
+            findViewById(R.id.radio_group9_humanities),
+            findViewById(R.id.radio_group10_humanities)
         )
 
         back = findViewById(R.id.back_quiz)
@@ -51,17 +51,31 @@ class QuestionActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val buttonNext: Button = findViewById(R.id.button_next)
+        val buttonNext: Button = findViewById(R.id.button_next_humanities)
+
         buttonNext.setOnClickListener {
             if (areAllQuestionsAnswered()) {
                 val score = calculateScore()
                 saveScore(score)
-                val intent = Intent(this, babpertanyaan::class.java)
-                startActivity(intent)
+
+                // Tampilkan dialog konfirmasi
+                AlertDialog.Builder(this)
+                    .setTitle("Konfirmasi")
+                    .setMessage("Apakah sudah yakin dengan jawaban anda?")
+                    .setPositiveButton("Ya") { dialog, which ->
+                        val intent = Intent(this, babpertanyaan::class.java)
+                        startActivity(intent)
+                    }
+                    .setNegativeButton("Tidak") { dialog, which ->
+                        // Tutup dialog
+                        dialog.dismiss()
+                    }
+                    .show()
             } else {
                 Toast.makeText(this, "Please answer all questions", Toast.LENGTH_LONG).show()
             }
         }
+
     }
 
     private fun areAllQuestionsAnswered(): Boolean {
@@ -76,11 +90,8 @@ class QuestionActivity : AppCompatActivity() {
     private fun saveScore(score: Int) {
         val sharedPreferences = getSharedPreferences("quiz_scores", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
-        editor.putInt("section_score_Accounting", score)
+        editor.putInt("section_score_humanities", score)  // Save score for section 1
         editor.apply()
-        // Verify score
-        val savedScore = sharedPreferences.getInt("section_score_Accounting", -1)
-        Log.d("QuestionActivity", "Score saved: $score, retrieved: $savedScore")
     }
 
     private fun calculateScore(): Int {

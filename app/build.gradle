@@ -7,7 +7,7 @@ plugins {
 android {
     signingConfigs {
         debug {
-            storeFile file('/Users/fauzanfarghani/AndroidStudioProjects/insightED/app/src/main/java/com/example/insighted/controller/MyKeystore/keystore.jks')
+            storeFile file('C:\\Users\\ASUS\\AndroidStudioProjects\\insightED\\app\\src\\main\\java\\com\\example\\insighted\\controller\\MyKeystore\\keystore.jks')
             storePassword 'hafidz123'
             keyAlias 'keymyapp'
             keyPassword 'hafidz123'

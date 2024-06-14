@@ -1,14 +1,15 @@
-package com.example.insighted
+package com.example.insighted.View
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.insighted.R
 
 class questionActivity_art : AppCompatActivity() {
 
@@ -55,9 +56,20 @@ class questionActivity_art : AppCompatActivity() {
             if (areAllQuestionsAnswered()) {
                 val score = calculateScore()
                 saveScore(score)
-//                Toast.makeText(this, "Your score is: $score", Toast.LENGTH_LONG).show()
-                val intent = Intent(this, babpertanyaan::class.java)
-                startActivity(intent)
+
+                // Tampilkan dialog konfirmasi
+                AlertDialog.Builder(this)
+                    .setTitle("Konfirmasi")
+                    .setMessage("Apakah sudah yakin dengan jawaban anda?")
+                    .setPositiveButton("Ya") { dialog, which ->
+                        val intent = Intent(this, babpertanyaan::class.java)
+                        startActivity(intent)
+                    }
+                    .setNegativeButton("Tidak") { dialog, which ->
+                        // Tutup dialog
+                        dialog.dismiss()
+                    }
+                    .show()
             } else {
                 Toast.makeText(this, "Please answer all questions", Toast.LENGTH_LONG).show()
             }
