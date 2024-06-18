@@ -47,6 +47,8 @@
         android:layout_marginTop="60dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/art"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
@@ -68,10 +70,11 @@
         android:id="@+id/art"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="236dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
@@ -94,9 +97,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/communication"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accounting">
 
@@ -118,10 +123,11 @@
         android:id="@+id/communication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/art">
 
@@ -145,8 +151,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/hospitality"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/business">
 
@@ -169,9 +177,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/humanities"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/computing">
 
@@ -193,10 +203,11 @@
         android:id="@+id/hospitality"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/communication">
 
@@ -218,10 +229,11 @@
         android:id="@+id/humanities"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button"
         android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hospitality">
 
