@@ -46,8 +46,10 @@ class questionActivity_business : AppCompatActivity() {
 
         back = findViewById(R.id.back_quiz)
         back.setOnClickListener {
-            val intent = Intent(this, babpertanyaan::class.java)
-            startActivity(intent)
+//            val intent = Intent(this, babpertanyaan::class.java)
+//            startActivity(intent)
+//            finish()
+            onBackPressed()
         }
 
         val buttonNext: Button = findViewById(R.id.button_next_business)
@@ -64,6 +66,7 @@ class questionActivity_business : AppCompatActivity() {
                     .setPositiveButton("Ya") { dialog, which ->
                         val intent = Intent(this, babpertanyaan::class.java)
                         startActivity(intent)
+                        finish()
                     }
                     .setNegativeButton("Tidak") { dialog, which ->
                         // Tutup dialog
