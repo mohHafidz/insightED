@@ -66,34 +66,42 @@ class babpertanyaan : AppCompatActivity() {
         accounting.setOnClickListener {
             val intent = Intent(this, QuestionActivity::class.java)
             startActivity(intent)
+            finish()
         }
         art.setOnClickListener {
             val intent = Intent(this, questionActivity_art::class.java)
             startActivity(intent)
+            finish()
         }
         business.setOnClickListener {
             val intent = Intent(this, questionActivity_business::class.java)
             startActivity(intent)
+            finish()
         }
         communication.setOnClickListener {
             val intent = Intent(this, questionActivity_Communication::class.java)
             startActivity(intent)
+            finish()
         }
         computing.setOnClickListener {
             val intent = Intent(this, questionActivity_Computing::class.java)
             startActivity(intent)
+            finish()
         }
         engineering.setOnClickListener {
             val intent = Intent(this, questionActivity_Engineering::class.java)
             startActivity(intent)
+            finish()
         }
         hospitality.setOnClickListener {
             val intent = Intent(this, questionActivity_Hospitality::class.java)
             startActivity(intent)
+            finish()
         }
         humanities.setOnClickListener {
             val intent = Intent(this, questionActivity_Humanities::class.java)
             startActivity(intent)
+            finish()
         }
     }
 
